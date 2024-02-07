@@ -7,3 +7,9 @@
     font-family: "Nunito", sans-serif;
   }
 }
+
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-screen-xl lg:px-8 px-4;
+  }
+}

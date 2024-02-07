@@ -2,13 +2,34 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar shadow-md">
         <div className="navbar-start">
           <h1>Logo</h1>
         </div>
         <div className="navbar-center">
-          <Link to={"/"}>Dashboard</Link>
-          <Link to={"/screenshots"}>Screenshots</Link>
+          <div role="tablist" className="tabs tabs-lg">
+            <ul>
+              <Link to={"/"}>
+                <input
+                  type="radio"
+                  name="my_tabs_1"
+                  role="tab"
+                  className="tab"
+                  aria-label="Dashboard"
+                />
+              </Link>
+              <Link to={"/screenshots"}>
+                <input
+                  type="radio"
+                  name="my_tabs_1"
+                  role="tab"
+                  className="tab"
+                  aria-label="Screenshots"
+                  checked
+                />
+              </Link>
+            </ul>
+          </div>
         </div>
         <div className="navbar-end">
           <div className="flex-none gap-2">
