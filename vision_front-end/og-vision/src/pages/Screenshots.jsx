@@ -1,5 +1,5 @@
 const Screenshots = () => {
-  return <h1>Screenshots</h1>;
+  return <div className="h-screen bg-slate-600">Screenshots</div>;
 };
 
 export default Screenshots;
